@@ -3,6 +3,12 @@ A template repository for GitHub Actions implemented in Python.
 
 ## Steps to Using This Template
 
+### LICENSE
+
+Choose your license.  This template is licensed under the MIT license,
+so that is what the LICENSE file indicates. If you use this template,
+either keep the MIT license or update to something compatible.
+
 ### dockerignore
 
 The `.dockerignore` is set up as a whitelist, initially 
