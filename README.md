@@ -38,5 +38,8 @@ The source repositories for these images:
 * https://github.com/cicirello/pyaction-lite
 * https://github.com/cicirello/pyaction
 
+### action.yml
 
- 
+Edit the `action.yml` file to define your action's inputs and outputs
+(see examples in the file).
+
