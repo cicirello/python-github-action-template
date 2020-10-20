@@ -49,3 +49,10 @@ The source repositories for these images:
 Edit the `action.yml` file to define your action's inputs and outputs
 (see examples in the file).
 
+### entrypoint.py
+
+You can rename this Python file to whatever you want, provided you change
+its name in all other files above that reference it.  The template version
+includes examples of accessing Action inputs and producing outputs.  Make
+sure it is executable (the one in the template is).
+
