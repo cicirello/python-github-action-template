@@ -70,4 +70,11 @@ The template repository enables GitHub's dependabot for keeping dependencies up 
 enables dependabot for Docker (since we're using Docker for the GitHub Action),
 and GitHub Actions to keep any workflow dependencies up to date.
 
+### .github/workflows/build.yml
+
+This workflow runs on pushes and pull requests against the main branch. It
+executes all Python unit tests (see tests/tests.py section above). It verifies that
+the docker image for the GitHub Action builds. You might consider adding steps to this
+workflow to also have it execute the GitHub Action (from the main branch).
+
 
