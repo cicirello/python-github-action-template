@@ -1,7 +1,11 @@
 # python-github-action-template
 A template repository for GitHub Actions implemented in Python.
 
-## Steps to Using This Template
+## Files in This Template
+
+### README.md
+
+Obviously, update this to reflect your GitHub Action.
 
 ### LICENSE
 
