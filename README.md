@@ -56,3 +56,15 @@ its name in all other files above that reference it.  The template version
 includes examples of accessing Action inputs and producing outputs.  Make
 sure it is executable (the one in the template is).
 
+### tests/tests.py
+
+Python unit test cases could go here.
+
+### .github/dependabot.yml
+
+The template repository enables GitHub's dependabot for keeping dependencies up to date
+(it generates pull requests when new versions are found).  The template file
+enables dependabot for Docker (since we're using Docker for the GitHub Action),
+and GitHub Actions to keep any workflow dependencies up to date.
+
+
