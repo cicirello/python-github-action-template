@@ -54,7 +54,10 @@ Edit the `action.yml` file to define your action's inputs and outputs
 You can rename this Python file to whatever you want, provided you change
 its name in all other files above that reference it.  The template version
 includes examples of accessing Action inputs and producing outputs.  Make
-sure it is executable (the one in the template is).
+sure it is executable (the one in the template is already executable). If
+you simply rename the file, it should keep the executable bit set. However,
+if you delete it and replace it with a new file, you'll need to set it
+executable.
 
 ### tests/tests.py
 
