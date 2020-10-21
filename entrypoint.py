@@ -10,7 +10,7 @@ if __name__ == "__main__" :
 
     # Fake example outputs
     output1 = "Hello"
-    output1 = "World"
+    output2 = "World"
 
     # This is how you produce outputs.
     # Make sure corresponds to output variable names in action.yml
