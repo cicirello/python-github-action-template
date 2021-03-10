@@ -67,6 +67,18 @@ executable.
 
 Python unit test cases could go here.
 
+### tests/integration.py
+
+Ideally, after unit testing the Python functions, methods, 
+etc (see above), you should also test the action itself.
+This involves running the action locally in a workflow
+within the action's own repository. If the action generates
+any files, or alters any files, then you can add a step
+to run the tests in `tests/integration.py` to validate the
+action's output. Although you don't necessarily need to do
+this with Python, it may be convenient since Python would
+already be configured in your workflow. 
+
 ### .github/dependabot.yml
 
 The template repository enables GitHub's dependabot for keeping dependencies up to date
@@ -78,7 +90,10 @@ and GitHub Actions to keep any workflow dependencies up to date.
 
 This workflow runs on pushes and pull requests against the main branch. It
 executes all Python unit tests (see tests/tests.py section above). It verifies that
-the docker image for the GitHub Action builds. You might consider adding steps to this
-workflow to also have it execute the GitHub Action (from the main branch).
+the docker image for the GitHub Action builds. It then executes the GitHub Action
+locally against the action's own repository, as an integration test. Finally, it 
+executes the tests in `tests/integration.py` (see earlier section) to validate
+any files created or edited by the integration test. You might also add a step
+to the workflow to test that outputs are correct as well. 
 
 
