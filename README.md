@@ -13,6 +13,11 @@ Choose your license.  This template is licensed under the MIT license,
 so that is what the LICENSE file indicates. If you use this template,
 either keep the MIT license or update to something compatible.
 
+### CHANGELOG.md
+
+It is a good idea to keep a changelog, so we've provided a template
+of a changelog within this template repository.
+
 ### dockerignore
 
 The `.dockerignore` is set up as a whitelist, initially 
