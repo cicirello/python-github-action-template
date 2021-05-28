@@ -101,4 +101,10 @@ executes the tests in `tests/integration.py` (see earlier section) to validate
 any files created or edited by the integration test. You might also add a step
 to the workflow to test that outputs are correct as well. 
 
+### .github/workflows/major-release-num.yml
 
+This workflow maintains a major release tag (e.g., v1 if current release 
+is v1.x.y). It runs on each release and either creates the tag (if this is the
+first release of a new major release number) or moves it if this is a minor
+or patch level release. __IMPORTANT: You must edit this with your name, etc in
+the commit and push step.__
