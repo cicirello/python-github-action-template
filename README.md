@@ -45,9 +45,13 @@ Registry. Uncomment/comment as appropriate in the Dockerfile
 as desired. Or if you'd rather not pull one of my images, you can 
 see the source repository for the details.  Here are the options
 found in the Dockerfile comments:
-* An image with Alpine Linux and Python only to keep image small for fast loading: `FROM cicirello/pyaction-lite:latest`
-* An image with Alpine Linux, Python, and git, which is also relatively small: `FROM cicirello/pyaction:latest`
-* To pull from the Github Container Registry instead of Docker Hub: `FROM ghcr.io/cicirello/pyaction-lite:latest` (and likewise for the other image).
+* An image with Alpine Linux and Python only to keep image small for fast loading: `FROM cicirello/pyaction-lite:3`
+* An image with Alpine Linux, Python, and git, which is also relatively small: `FROM cicirello/pyaction:3`
+* Beginning with version 4, the pyaction image no longer uses Alpine as the 
+  base. It now uses python:3-slim, which is built on Debian (the slim version is 
+  small but not nearly as small as Alpine), on
+  which we have installed the GitHub CLI : `FROM cicirello/pyaction:4`
+* To pull from the Github Container Registry instead of Docker Hub: `FROM ghcr.io/cicirello/pyaction:4` (and likewise for the other images).
 
 The source repositories for these images:
 * https://github.com/cicirello/pyaction-lite
