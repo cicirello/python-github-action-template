@@ -1,5 +1,11 @@
 #!/usr/bin/env -S python3 -B
 
+# NOTE: If you are using an alpine docker image
+# such as pyaction-lite, the -S option above won't
+# work. The above line works fine on other distributions
+# such as debian, etc, so the above line will work fine
+# if you use pyaction:4.0.0 or higher as your base docker image.
+
 import sys
 
 if __name__ == "__main__" :
