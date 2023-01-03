@@ -20,7 +20,7 @@ of a changelog within this template repository.
 
 ### dockerignore
 
-The `.dockerignore` is set up as a whitelist, initially 
+The `.dockerignore` is set up as an allowlist, initially 
 allowing only the `Dockerfile` and the `entrypoint.py`.
 If you rename `entrypoint.py`, be sure to edit 
 the `.dockerignore` (or likewise, if your GitHub Action
