@@ -6,7 +6,7 @@ branding: # Look at documentation for branding options/requirements. These are m
   icon: 'book-open'
   color: 'green'
 inputs:
-  input-one:  
+  input-one:
     description: 'Description of input-one'
     required: false
     default: 'default value goes here'
@@ -18,7 +18,7 @@ outputs:
   output-one:
     description: 'Description of output-one'
   output-two:
-    description: 'Description of output-two'	
+    description: 'Description of output-two'
 runs:
   using: 'docker'
   image: 'Dockerfile'
